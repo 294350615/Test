@@ -1,7 +1,11 @@
 package com.haitai.sort;
 
 import java.util.Arrays;
-
+/**
+ * 
+ * @author Haitai-116
+ *
+ */
 public class QuickSort {
 	public static void main(String[] args) {
 		
@@ -25,16 +29,16 @@ public class QuickSort {
 				if(i<j){
 					swap(data,i,j);
 				}else {
-					System.out.println("½»»»Íê³É1"+Arrays.toString(data));
+					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1"+Arrays.toString(data));
 					break;
 				}
 				System.out.println(Arrays.toString(data));
 			}
 			swap(data, start, j);
-			System.out.println("½»»»Íê³É2"+Arrays.toString(data));
-			//µÝ¹é×ó×ÓÐòÁÐ
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2"+Arrays.toString(data));
+			//ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			subSort(data,start,j);
-			//µÝ¹é×ó×ÓÐòÁÐ
+			//ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			subSort(data,j+1,end);
 		}
 	}
